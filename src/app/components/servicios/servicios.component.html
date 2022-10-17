@@ -1,0 +1,33 @@
+<h1>Registro de servicios</h1>
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" 
+          aria-current="page" 
+          routerLink="crearservicio"
+          routerLinkActive="active">crear servicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" 
+          routerLink="editar"
+          routerLinkActive="active">editar servicio</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" 
+            routerLink="eliminar"
+            routerLinkActive="active">eliminar servicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" 
+            routerLink="listar"
+            routerLinkActive="active">listar servicio</a>
+          </li>
+        
+      </ul>
+ <div class="container">
+        <router-outlet></router-outlet>
+  </div>
+
+</div>

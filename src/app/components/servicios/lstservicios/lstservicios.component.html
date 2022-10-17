@@ -1,0 +1,17 @@
+<div class="container text-center mt-3" style="width: 50%;">
+    <table>
+      <tr class="headertable" >
+        <th style="width:100px;">ID</th>
+        <th style="width:350px;">Nombre</th>
+      </tr>
+    
+    
+      <tr class="text-start" *ngFor="let cargo of lstservicios">
+        <td>{{cargo.id}}</td>
+        <td>{{cargo.nombre}}</td>
+       
+        
+      </tr>
+      
+    </table>
+</div>

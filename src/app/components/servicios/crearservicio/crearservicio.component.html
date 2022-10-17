@@ -1,0 +1,63 @@
+<div class="container mt-5"  >
+    <div class="row justify-content-md-center">
+        <div class="col-12">
+            <form class="row g-3" [formGroup]="frmRegistro" id="frmdataRegistro">
+                
+                <div class="row">
+                    <div class="col-5">
+
+                        <div class="form-group">
+                            <label for="nombrepersona">Nombre del servicio </label>
+                            <input  formControlName="nombre" type="text" name="nombrepersona" id="nombrepersona" class="form-control">
+                            <ng-container *ngFor="let validation of validationMessage.nombre">
+                                <div *ngIf="frmRegistro.controls['nombre'].hasError(validation.type) &&
+                                 (frmRegistro.controls['nombre'].dirty || frmRegistro.controls['nombre'].touched)">
+                                  <small class="text-danger">{{validation.message}}</small>
+                                </div>
+                                </ng-container>
+                         </div>
+                         
+                    </div>
+
+                    <div class="col-7">
+
+                <div class="form-group">
+                    <label for="nombrepersona">Descripcion </label>
+                    <!--<input  formControlName="descripcion" type="textarea" name="nombrepersona" id="nombrepersona" class="form-control" >-->
+                    <textarea formControlName="descripcion" type="textarea" name="nombrepersona" id="nombrepersona" class="form-control" rows="5" cols="50">Write something here</textarea>
+                    <ng-container *ngFor="let validation of validationMessage.nombre">
+                        <div *ngIf="frmRegistro.controls['descripcion'].hasError(validation.type) &&
+                         (frmRegistro.controls['descripcion'].dirty || frmRegistro.controls['descripcion'].touched)">
+                          <small class="text-danger">{{validation.message}}</small>
+                        </div>
+                        </ng-container>
+                 </div>
+
+            </div>
+
+           </div>
+
+           
+            
+
+    
+
+
+           
+
+                
+              
+              </form>
+
+              <div class="row justify-content-md-center mt-3">
+                <div class="col-6">
+                 <button type="button" class="btn btn-primary" (click)="onSubmitData">Guardar Cargo</button>  
+                </div>
+            </div>
+              
+        </div>
+
+
+    </div>
+    
+</div>
