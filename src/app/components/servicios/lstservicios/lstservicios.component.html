@@ -1,4 +1,4 @@
-<div class="container text-center mt-3" style="width: 50%;">
+<!-- <div class="container text-center mt-3" style="width: 50%;">
     <table>
       <tr class="headertable" >
         <th style="width:100px;">ID</th>
@@ -14,4 +14,32 @@
       </tr>
       
     </table>
-</div>
+</div> -->
+
+<div class="container  mt-2">
+  <table id="servicio" class="table table-striped" style="width:100%">
+    <thead>
+      
+        <tr>
+            <th style="width:10% ;">Id</th>
+            <th style="width:350% ;">Nombre</th>
+            <th style="width:350% ;">Descripcion</th>
+            <th style="width:350% ;"></th>   
+            
+            
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr  *ngFor="let servicio of data">
+            <td>{{servicio.id}}</td>
+            <td>{{servicio.nombre}}</td>
+            <td>{{servicio.descripcion}}</td>
+            <td class="text-end"><button type="button" class="btn btn-danger" (click)="EliminarRegistro(servicio.id)" >Eliminar</button></td>
+            
+        </tr>
+        
+    </tbody>
+    
+  </table>
+  </div>

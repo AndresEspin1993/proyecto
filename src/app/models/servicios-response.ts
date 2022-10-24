@@ -1,5 +1,6 @@
 export interface ServiciosResponse {
     id: number;
-    nombre: string;//service
+    nombre: string;
+    descripcion: Text;//service
   }
   
