@@ -68,7 +68,7 @@
             <div class="row">
               <div class="col-8">
                   <div class="form-group">
-                      <label for="nombrePersona">Nombre Cargo &nbsp;<span class="badge text-bg-dark" *ngIf="idFK>0">Id:&nbsp;{{idFK}}</span></label>
+                      <label for="nombrePersona">Nombre servicio &nbsp;<span class="badge text-bg-dark" *ngIf="idFK>0">Id:&nbsp;{{idFK}}</span></label>
                       <input formControlName="nombre" type="text" class="form-control" name="nombrePersona" id="nombrePersona">
                       <ng-container *ngFor="let validation of validationMessage.nombre">
                           <div *ngIf="frmRegistro.controls['nombre'].hasError(validation.type) && (frmRegistro.controls['nombre'].dirty || frmRegistro.controls['nombre'].touched)">
